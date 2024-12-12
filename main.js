@@ -59,14 +59,10 @@ function displayMeals(meals) {
     
         // Validate the email format
         if (validateEmail(email)) {
-            // Simulate an API call or email subscription logic here
-            // For now, we'll just show a success message
+          
             messageContainer.textContent = 'Thank you for subscribing!';
             messageContainer.style.color = 'green';
             messageContainer.style.display = 'block';
-    
-            // You can add actual logic to send the email to the server or an email service (e.g., Mailchimp)
-            // Example: callSubscribeAPI(email);
     
             // Clear the input field after subscription
             document.getElementById('email').value = '';
